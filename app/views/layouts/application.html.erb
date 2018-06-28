@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby28Jun</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <%= link_to "Home", root_path %>
     <%= yield %>
   </body>
 </html>
